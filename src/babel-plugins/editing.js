@@ -1,8 +1,6 @@
 const TAGS_TO_REPLACE = ["p"];
 const INPUT_IDENTIFIER = "__CC_Input__";
 
-const { relative } = require("path");
-
 module.exports = ({ types: t }) => {
   return {
     visitor: {
@@ -20,7 +18,7 @@ module.exports = ({ types: t }) => {
         if (!TAGS_TO_REPLACE.includes(path.node.openingElement.name.name)) {
           return;
         }
-        const filename = relative(__dirname, state.file.opts.filename);
+        const filename = state.file.opts.filename;
         const { line, column } = path.node.loc.start;
         path.node.children = [
           t.jSXElement(
