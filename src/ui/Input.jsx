@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { trackChanges } from "./track";
+import { trackChanges } from "./trackChanges";
 
 import "./styles.css";
 

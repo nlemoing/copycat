@@ -8,7 +8,7 @@ module.exports = ({ types: t }) => {
       Program(path) {
         const importStatement = t.importDeclaration(
           [t.importDefaultSpecifier(t.identifier(INPUT_IDENTIFIER))],
-          t.stringLiteral("copycat/ui/Input")
+          t.stringLiteral("copycat/src/ui/Input")
         );
         path.node.body.splice(0, 0, importStatement);
       },
