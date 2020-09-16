@@ -1,0 +1,10 @@
+.kk-input-element {
+    background: none;
+    border-radius: 5px;
+    resize: none;
+    display: inline;
+}
+
+.kk-input-element:hover {
+    border: 2px solid;
+}
