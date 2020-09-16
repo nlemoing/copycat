@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/nlemoing/copycat/issues"
   },
-  "homepage": "https://github.com/nlemoing/copycat#readme"
+  "homepage": "https://github.com/nlemoing/copycat#readme",
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1"
+  }
 }
